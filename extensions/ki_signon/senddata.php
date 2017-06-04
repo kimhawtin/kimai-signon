@@ -32,9 +32,6 @@ $exeTwo = $conn->query($query);
 		}
 	}
 
-
-//$exe = $conn->query($sql);
-
 //close the connection to the database
 mysqli_close($conn);
 ?>

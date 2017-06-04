@@ -21,8 +21,6 @@
 			endTime.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			endTime.send('timeEntryID=' + timeEntryID + '&start=' + start);
 			window.location.reload(true);
-			window.location.reload(true);
-			window.location.reload(true);
 		}
 		
 		function signin(){
@@ -36,8 +34,6 @@
 			newTime.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			newTime.send('name=' + username);
 			window.location.reload(true);
-			window.location.reload(true);
-			window.location.reload(true);
 		}
 			
 		function debugs(debug){
@@ -45,8 +41,6 @@
 			endTime.open("POST", "senddata.php", true);
 			endTime.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			endTime.send('timeEntryID=0&start=0&debug=1');
-			window.location.reload(true);
-			window.location.reload(true);
 			window.location.reload(true);
 		}		
 		</script>
@@ -117,7 +111,7 @@
 	
 	// We only want to see today's sign-ons.
 	// Time offset hard coded for Adelaide.
-	$today = time() - 20000;
+	$today = time() + 34200;
 	$humanDate = new DateTime("@$today");
 	$convertToDayMonth = $humanDate->format('Y-m-d');
 	echo ($convertToDayMonth);
@@ -166,7 +160,7 @@
 				</tr>
 			</table>					
 			
-			<form><input name="debug" type=submit value="Debug" id="button1" style="width:100%" onclick="debugs(1)"></form></td>
+			<!--<form><input name="debug" type=submit value="Debug" id="button1" style="width:100%" onclick="debugs(1)"></form></td> -->
 			
 			<div id="popup1" class="overlay">
 				<div class="popup">
