@@ -1,0 +1,156 @@
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+table, th, td {
+	margin: auto;
+	font-family: Arial;
+    border: 3px solid black;
+	padding: 10px;
+	border-collapse: collapse;
+	font-size: 25px;
+	text-align: center;	
+}
+td.shrink {
+  white-space: nowrap;
+  width: 10px;
+}
+
+#button1 {
+    height: 100px;
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.buttonSignIn {
+  width: 100%;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 80%;
+  overflow: auto;
+}
+	
+#button2 {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+	margin: 0;
+}
+
+	.web{
+		font-family:tahoma;
+		size:12px;
+		top:10%;
+		border:1px solid #CDCDCD;
+		border-radius:10px;
+		padding:10px;
+		width:38%;
+		margin:auto;
+	}
+	#search_keyword_id
+	{
+		width:100%;
+		border:solid 1px #CDCDCD;
+		padding:10px;
+		font-size:14px;
+	}
+	#result
+	{
+		position:absolute;
+		width:320px;
+		display:none;
+		margin-top:-1px;
+		border-top:0px;
+		overflow:hidden;
+		border:1px #CDCDCD solid;
+		background-color: white;
+	}
+	.show
+	{
+		font-family:tahoma;
+		padding:10px; 
+		border-bottom:1px #CDCDCD dashed;
+		font-size:15px; 
+	}
+	.show:hover
+	{
+		background:#364956;
+		color:#FFF;
+		cursor:pointer;
+	}
